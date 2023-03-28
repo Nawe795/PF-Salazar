@@ -1,0 +1,40 @@
+/*Navegador*/
+.ancla {
+	color: $color_2;
+	text-align: center;
+	display: inline-block;
+	width: 6em;
+	position: relative;
+	overflow: hidden;
+	border: 2px solid $color_5;
+	transition: 1s;
+	z-index: 1;
+	font-size: 17px;
+	border-radius: 6px;
+	font-weight: 500;
+	color: $color_5;
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		background: $color_5;
+		height: 150px;
+		width: 200px;
+		border-radius: 50%;
+		top: 100%;
+		left: 100%;
+		transition: all .7s;
+	}
+	&:hover {
+		color: $color_4;
+		&:before {
+			top: -30px;
+			left: -30px;
+		}
+	}
+}
+.logotipoArabia {
+	width: 18vw;
+	height: 8vw;
+}
+/*-------------------------------------------------------------------------------------------------*/

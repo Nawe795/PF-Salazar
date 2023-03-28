@@ -1,0 +1,37 @@
+/*MEDIAS*/
+@media (min-width: 40em) {
+	.carousel-caption {
+		p {
+			margin-bottom: 1.25rem;
+			font-size: 1.25rem;
+			line-height: 1.4;
+		}
+	}
+	.featurette-heading {
+		font-size: 50px;
+	}
+}
+@media (min-width: 62em) {
+	.featurette-heading {
+		margin-top: 7rem;
+	}
+}
+@media (max-width: 600px) {
+	.tamaño-video {
+		width: 100%;
+		height: 50vh;
+	}
+}
+@media (max-width: 768px) {
+	.img-arabia-contactos {
+		display: none;
+	}
+	.contenedor-redes-contactos {
+		max-width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+/*-------------------------------------------------------------------------------------------------*/

@@ -1,0 +1,39 @@
+/* Configuracion del Carousel*/
+.carousel {
+	margin-bottom: 4rem;
+}
+.carousel-caption {
+	bottom: 3rem;
+	z-index: 10;
+}
+.carousel-item {
+	height: 32rem;
+	>img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		min-width: 100%;
+		height: 32rem;
+	}
+}
+.text-negro {
+	color: $color_2;
+	background-color: $background-color_1;
+	border-radius: 0.8rem;
+}
+.text-blanco {
+	color: $color_3;
+	background-color: $background-color_1;
+	border-radius: 0.8rem;
+}
+.bgcolor-verde {
+	background-color: $background-color_2;
+	border: none;
+	color: $color_5;
+	&:hover {
+		border: solid;
+		background-color: $background-color_2;
+		color: $color_3;
+	}
+}
+/*-------------------------------------------------------------------------------------------------*/

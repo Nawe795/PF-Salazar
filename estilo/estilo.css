@@ -1,0 +1,289 @@
+@charset "UTF-8";
+/*MIXIN*/ /*Configuracion del Body*/
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+/* Configuracion del Carousel*/
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+.text-negro {
+  color: black;
+  background-color: rgba(128, 128, 128, 0.5);
+  border-radius: 0.8rem;
+}
+
+.text-blanco {
+  color: white;
+  background-color: rgba(128, 128, 128, 0.5);
+  border-radius: 0.8rem;
+}
+
+.bgcolor-verde {
+  background-color: rgb(26, 208, 63);
+  border: none;
+  color: #000;
+}
+.bgcolor-verde:hover {
+  border: solid;
+  background-color: rgb(26, 208, 63);
+  color: white;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+/* Redes Sociales de Index */
+.redes .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.redes .col-lg-4 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+.redes h2 {
+  font-weight: 400;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+/*Separador*/
+.featurette-divider {
+  margin: 5rem 0;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+/*Navegador*/
+.ancla {
+  color: black;
+  text-align: center;
+  display: inline-block;
+  width: 6em;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #000;
+  transition: 1s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: #000;
+}
+.ancla:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #000;
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+.ancla:hover {
+  color: #fff;
+}
+.ancla:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+.logotipoArabia {
+  width: 18vw;
+  height: 8vw;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+/*Redes*/
+.tamaño-img {
+  width: 50vw;
+  height: 50vh;
+}
+
+.tamaño-redes {
+  width: 140px;
+  height: 140px;
+  filter: grayscale(100%);
+}
+.tamaño-redes:hover {
+  filter: none;
+  animation: shake3856 0.3s linear infinite both;
+}
+
+@keyframes shake3856 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+/*-------------------------------------------------------------------------------------------------*/
+/*NOSOTROS*/
+.tamaño-video {
+  width: 50vw;
+  height: 50vh;
+}
+
+.border-text {
+  border: solid;
+  width: 50%;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+/*TENDENCIAS*/
+.imagenUñas {
+  width: auto;
+  height: 50vh;
+  object-fit: cover;
+}
+
+.boton {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+.boton:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+.boton:active {
+  transform: translateY(-1px);
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+/*SUCURSALES*/
+.border-tuning {
+  border-radius: 103px 0px 64px 1px;
+  -moz-border-radius: 103px 0px 64px 1px;
+  -webkit-border-radius: 103px 0px 64px 1px;
+  border: 3px dashed #654ea3;
+}
+
+.border-tuning-dos {
+  border-radius: 0px 64px 0px 64px;
+  -moz-border-radius: 0px 64px 0px 64px;
+  -webkit-border-radius: 0px 64px 0px 64px;
+  border: 3px dashed #654ea3;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+/*CONTACTOS*/
+.tamaño-redes-contactos {
+  width: 140px;
+  height: 140px;
+  filter: grayscale(100%);
+}
+.tamaño-redes-contactos:hover {
+  filter: none;
+  animation: shake3856 0.3s linear infinite both;
+}
+
+.contenedor-redes-contactos {
+  display: flex;
+  justify-content: center;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+/*RELLENO*/
+.pt-6 {
+  padding-top: 6rem;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+/*Boton de Whatsapp*/
+.botonWhatsApp img {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+/*MEDIAS*/
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+@media (max-width: 600px) {
+  .tamaño-video {
+    width: 100%;
+    height: 50vh;
+  }
+}
+@media (max-width: 768px) {
+  .img-arabia-contactos {
+    display: none;
+  }
+  .contenedor-redes-contactos {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+/*-------------------------------------------------------------------------------------------------*/
+
+/*# sourceMappingURL=estilo.css.map */

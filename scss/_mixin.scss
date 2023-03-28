@@ -1,0 +1,10 @@
+/*MIXIN*/
+@mixin redes{
+	width: 140px;
+	height: 140px;
+	filter: grayscale(100%);
+	&:hover {
+		filter: none;
+		animation: shake3856 0.3s linear infinite both;
+	}
+}
